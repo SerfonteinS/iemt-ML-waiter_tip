@@ -20,12 +20,14 @@ if __name__ == '__main__':
     model = LinearRegression()
     model.fit(xtrain, ytrain)
 
-    # Please enter the required values for the prediction:
+
+    # Please enter the required values for the prediction, below on line 32 in the array:
     #  the first value is the bill total.
     #  the second value is the paying customer's gender, which is either the number 0 for female, or 1 for male.
     #  the third value is the paying customer's smoking status, which is either 0 for if they are not a smoker, or 1 for if they are.
     #  the fourth value is the day of the transaction for which the tip must be predicted, either 0 for Thursday, 1 for Friday, 2 for Saturday, or 3 for Sunday.
     #  the fifth value is the time of the transaction for which the tip must be predicted, either 0 for lunch, or 1 for dinner.
     #  the sixth value is the number of people in the group.
+    
     input = npy.array([[24.50, 1, 0, 0, 1, 4]])
     print(model.predict(input))

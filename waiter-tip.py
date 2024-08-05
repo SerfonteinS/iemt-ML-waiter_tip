@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import pandas as pda
 import numpy as npy
 from sklearn.model_selection import train_test_split
